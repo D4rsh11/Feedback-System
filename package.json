@@ -1,0 +1,20 @@
+{
+  "name": "college-feedback-system",
+  "version": "1.0.0",
+  "description": "A minimalistic college feedback system with student and admin dashboards",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "setup": "node setup.js",
+    "seed": "cd backend && npm run seed"
+  },
+  "keywords": ["feedback", "college", "analytics", "sentiment-analysis"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
